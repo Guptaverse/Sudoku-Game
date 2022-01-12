@@ -1,4 +1,4 @@
-body{
+body {
     margin: 0%;
     padding: 0%;
     background-color: azure;
@@ -7,21 +7,27 @@ body{
     width: 100vw;
     display: flex;
     flex-direction: column;
-    justify-content:space-between;
+    justify-content: space-between;
 }
-.header{
+
+:root {
+    --tileWidth: 35px;
+}
+
+.header {
     flex: 2;
     text-align: center;
 }
-.content{
-    flex:5;
+
+.content {
+    flex: 5;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     /* background-color: rgb(247, 64, 64); */
-
 }
-.card{
+
+.card {
     height: 30px;
     width: 75px;
     border-radius: 10px;
@@ -29,7 +35,8 @@ body{
     text-align: center;
     color: beige;
 }
-.card2{
+
+.card2 {
     height: 20px;
     width: 55px;
     border-radius: 10px;
@@ -38,7 +45,8 @@ body{
     color: beige;
     font-size: 10px;
 }
-.card3{
+
+.card3 {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -48,12 +56,13 @@ body{
     border: solid black;
     text-align: center;
     color: beige;
-    font-size: 10px;  
+    font-size: 10px;
     width: 25px;
     height: 25px;
     background-color: rgba(128, 128, 128, 0.541);
 }
-.card4{
+
+.card4 {
     height: 30px;
     width: 75px;
     border-radius: 10px;
@@ -62,43 +71,47 @@ body{
     color: beige;
     font-size: 10px;
 }
-.easy{
+
+.easy {
     background-color: cadetblue;
 }
-.medium{
+
+.medium {
     background-color: rgb(177, 175, 46);
 }
-.hard{
+
+.hard {
     background-color: rgb(187, 91, 26);
 }
-.left-part{
 
+.left-part {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     /* background-color: rgb(79, 247, 64); */
-
 }
-.middle-part1{
 
+.middle-part1 {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     border: solid black;
     border-radius: 15px;
     /* background-color: rgb(64, 204, 247); */
-
 }
-.game{
+
+.game {
     flex: 5;
     display: flex;
     flex-direction: row;
 }
-.sudoku{
-    /* background-color: #fff; */
-}
-.number-palet{
 
+
+/* .sudoku {
+    background-color: #fff;
+} */
+
+.number-palet {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -108,35 +121,59 @@ body{
     height: 100px;
 }
 
-.control-panel{
+.control-panel {
     flex: 1;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     /* background-color: rgb(85, 14, 252); */
-
 }
-.reset{
+
+.reset {
     background-color: rgb(255, 89, 47);
 }
-.play{
+
+.play {
     background-color: rgb(43, 72, 202);
 }
-.submit{
+
+.submit {
     background-color: greenyellow;
 }
-.right-part{
 
+.right-part {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     /* background-color: rgb(221, 0, 250); */
-
 }
 
-.footer{
+.footer {
     flex: 1;
     background-color: rgb(99, 53, 53);
+}
 
+
+/* -------------------------------------------------------- */
+
+.main {
+    padding: 10px;
+    width: calc(var(--tileWidth) * 10);
+}
+
+.tile {
+    cursor: pointer;
+    float: left;
+    line-height: var(--tileWidth);
+    text-align: center;
+    font-size: calc(var(--tileWidth)/2);
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    width: var(--tileWidth);
+    height: var(--tileWidth);
+    color: red;
+    /* margin: 3px; */
+    background-color: rgba(255, 0, 0, 0.1);
+    border: 1px outset rgba(255, 0, 0, 0.5);
 }
