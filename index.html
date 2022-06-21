@@ -7,9 +7,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sudoku Game</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="logic.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Mochiy+Pop+P+One&display=swap" rel="stylesheet">
+
 </head>
 
 <body>
@@ -18,17 +20,17 @@
         <h1>SUDOKU ARENA</h1>
     </div>
     <div class="content">
-        <div class="left-part">
+        <!-- <div class="left-part">
             <div class="easy card">Easy</div>
             <div class="medium card">Medium</div>
             <div class="hard card">Hard</div>
         </div>
         <div class="middle-part1">
-            <div class="game">
+            <div class="game"> -->
                 <!-- <div class="sudoku"> -->
-                <div id="Main" class="main"></div>
+                <!-- <div id="Main" class="main"></div> -->
                 <!-- </div> -->
-                <div class="number-palet ">
+                <!-- <div class="number-palet ">
                     <div onclick="numberClick(1)" class="div1 card3">1</div>
                     <div onclick="numberClick(2)" class="div2 card3">2</div>
                     <div onclick="numberClick(3)" class="div3 card3">3</div>
@@ -39,7 +41,29 @@
                     <div onclick="numberClick(8)" class="div8 card3">8</div>
                     <div onclick="numberClick(9)" class="div9 card3">9</div>
                 </div>
+            </div> -->
+            <div class="left-part">
+                <div onclick="gamethemeEMH(0)" class="easy card">Easy</div>
+                <div onclick="gamethemeEMH(1)" class="medium card">Medium</div>
+                <div onclick="gamethemeEMH(2)" class="hard card">Hard</div>
             </div>
+            <div class="middle-part1">
+                <div class="game">
+                    <!-- <div class="sudoku"> -->
+                    <div id="Main" class="main"></div>
+                    <!-- </div> -->
+                    <div class="number-palet ">
+                        <div id="numpad1" onclick="numberClick(1)" class="div1 card3">1</div>
+                        <div id="numpad2" onclick="numberClick(2)" class="div2 card3">2</div>
+                        <div id="numpad3" onclick="numberClick(3)" class="div3 card3">3</div>
+                        <div id="numpad4" onclick="numberClick(4)" class="div4 card3">4</div>
+                        <div id="numpad5" onclick="numberClick(5)" class="div5 card3">5</div>
+                        <div id="numpad6" onclick="numberClick(6)" class="div6 card3">6</div>
+                        <div id="numpad7" onclick="numberClick(7)" class="div7 card3">7</div>
+                        <div id="numpad8" onclick="numberClick(8)" class="div8 card3">8</div>
+                        <div id="numpad9" onclick="numberClick(9)" class="div9 card3">9</div>
+                    </div>
+                </div>
             <div class="control-panel">
                 <div class="reset card " id="reset">Reset</div>
                 <div class="play card" id="play">Play</div>
