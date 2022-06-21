@@ -1,30 +1,3 @@
-let a = "00",
-    b = "00";
-let sec = document.getElementById("sec");
-let min = document.getElementById("min");
-let play = document.getElementById("play");
-let submit = document.getElementById("submit");
-let reset = document.getElementById("reset");
-let Interval;
-
-play.addEventListener('click', () => {
-    clearInterval(Interval);
-    Interval = setInterval(startTime, 1);
-});
-
-submit.addEventListener('click', () => {
-    clearInterval(Interval);
-});
-
-reset.addEventListener('click', () => {
-    clearInterval(Interval);
-    a = "00";
-    b = "00";
-    min.textContent = a;
-    sec.textContent = b;
-});
-
-//-------------------------------------------------------------------------
 const easy = [
     "6------7------5-2------1---362----81--96-----71--9-4-5-2---651---78----345-------",
     "685329174971485326234761859362574981549618732718293465823946517197852643456137298"
@@ -65,3 +38,7 @@ const numberClick = (num) => {
     const prevSelectedTile = document.getElementById(tileSelected);
     prevSelectedTile.innerText = num;
 }
+console.log("hello");
+const shivam = 20;
+const sumit = -34;
+console.log("main",shivam,sumit);

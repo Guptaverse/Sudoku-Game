@@ -28,6 +28,7 @@ body {
 }
 
 .card {
+    cursor: pointer;
     height: 30px;
     width: 75px;
     border-radius: 10px;
@@ -37,6 +38,7 @@ body {
 }
 
 .card2 {
+    cursor: pointer;
     height: 20px;
     width: 55px;
     border-radius: 10px;
@@ -47,6 +49,7 @@ body {
 }
 
 .card3 {
+    cursor: pointer;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -63,13 +66,15 @@ body {
 }
 
 .card4 {
+    cursor: pointer;
     height: 30px;
     width: 75px;
     border-radius: 10px;
     border: solid black;
     text-align: center;
     color: beige;
-    font-size: 10px;
+    /* text-align: center; */
+    font-size: 1rem;
 }
 
 .easy {
@@ -97,6 +102,7 @@ body {
     justify-content: space-between;
     border: solid black;
     border-radius: 15px;
+    margin-bottom: 3rem;
     /* background-color: rgb(64, 204, 247); */
 }
 
@@ -145,10 +151,45 @@ body {
 .right-part {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100%;
     /* background-color: rgb(221, 0, 250); */
 }
+p{
+    margin: 0.15rem 0rem 0rem 0rem;
+}
+.timer{
+    padding:0px 93px;
+    text-align: center;
+    /* height: 3rem; */
+}
 
+.rules{
+    margin-top: 0.15rem;
+    background-image: url(images/scroll.png);
+    height: 23rem;
+    width: 17rem;
+    /* text-align: center; */
+    font-size: 0.8rem;
+    background-repeat:no-repeat ;
+    background-size: 100%;
+}
+.rules>h3{
+    padding-top: 0.6rem;
+    text-align: center;
+}
+.rules-text{
+    height: 50%;
+    padding: 0rem 1rem;
+    width:80% ;
+}
+ol{
+    margin-top: 0%;
+}
+.result{
+
+}
 .footer {
     flex: 1;
     background-color: rgb(99, 53, 53);
